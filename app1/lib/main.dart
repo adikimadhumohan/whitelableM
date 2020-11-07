@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:config/Config.dart';
 
+
 void main() {
   runApp(MyApp());
 }
@@ -34,7 +35,6 @@ class MyApp extends StatelessWidget {
       home: MyHomePage(title: APP_HEADING_COPY),
     );
   }
-}
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -102,9 +102,11 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Image.asset('assets/icon.png'),
             Text(
               'You have pushed the button this many times:',
             ),
+
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
